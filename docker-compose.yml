@@ -63,6 +63,7 @@ services:
   dbpostgres:
     image: postgres:latest
     container_name: dbpostgres
+    restart: always
     environment:
       POSTGRES_DB: nextcloud
       POSTGRES_USER: postgres
